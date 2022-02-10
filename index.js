@@ -14,7 +14,7 @@ const { TextDatabase } = require("@maxisthemoose/text-database");
 
 const TDB = new TextDatabase({
     databaseName: "addresses",
-    location: "./",
+    location: "",
 });
 
 client.config = config
