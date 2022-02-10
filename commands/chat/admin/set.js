@@ -18,7 +18,7 @@ module.exports = {
         client.db.writeData(user.id, address)
         return message.channel.send(`Successfully changed ${user.username}'s wallet address.`).then(a => {
             const embed = new Discord.MessageEmbed()
-            .setAuthor({ name: "[Wallet Update] " +user.username+ " has changed his wallet", iconURL: message.author.avatarURL()})
+            .setAuthor({ name: "[Wallet Update] " +user.username+ " has changed his wallet", iconURL: user.avatarURL()})
             .addField('User', `<@${user.id}>`, true)
             .addField('ID', user.id, true)
             .addField('Changed by', `<@${message.author.id}>`, true)
