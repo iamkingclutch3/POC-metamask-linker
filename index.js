@@ -11,13 +11,13 @@ const client = new Client({
 const config = require("./config.js");
 const fs = require('fs')
 const path = require('path');
-const path = path.resolve(__dirname, './');
+const dir = path.resolve(__dirname, './');
 const { TextDatabase } = require("@maxisthemoose/text-database");
 
 
 const TDB = new TextDatabase({
     databaseName: "addresses",
-    location: path,
+    location: dir,
 });
 
 client.config = config
