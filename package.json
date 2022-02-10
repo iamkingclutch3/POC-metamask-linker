@@ -9,6 +9,8 @@
   "author": "i_am_kingclutch#3068",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "@maxisthemoose/text-database": "^1.0.1",
     "discord.js": "^13.6.0"
   }
 }
